@@ -136,6 +136,10 @@ function addDefaultStyles() {
     .comment-header {
       color:blue;
     }
+
+    .comment-text p {
+      color:blue;
+    }
     
   `;
 
