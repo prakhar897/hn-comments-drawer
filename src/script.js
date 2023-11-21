@@ -16,11 +16,22 @@ async function displayHNComments(
 			return;
 		}
 
+		commentsDrawer.innerHTML = `
+    <div id="hn-comments-drawer-heading">
+      Comments on Hacker News Story:
+      <a href="https://news.ycombinator.com/item?id=${storyId}">
+        ${storyData.title}
+      </a>
+    </div>
+
+
+    `;
+
 		const comments = storyData.kids;
 		const commentsHTML = await createCommentsHTML(comments, options);
 
 		// Display comments in the comments drawer element
-		commentsDrawer.innerHTML = commentsHTML;
+		commentsDrawer.innerHTML += commentsHTML;
 
 		// Add basic styles for comments dynamically
 		addDefaultStyles();
@@ -96,6 +107,13 @@ function addDefaultStyles() {
       list-style-type: none;
       margin-left: 0;
       padding-left: 20px;
+      border: 2px solid red;
+      margin-top: 50px;
+      margin-bottom: 50px;
+
+    }
+
+    .hn-comments-drawer-heading{
       border: 2px solid red;
     }
 
