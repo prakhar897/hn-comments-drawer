@@ -16,7 +16,7 @@ async function displayHNComments(
 			return;
 		}
 
-		commentsDrawer.innerHTML = `
+		commentsDrawer.innerHTML += `
     <div id="hn-comments-drawer-heading">
       Comments on Hacker News Story:
       <a href="https://news.ycombinator.com/item?id=${storyId}">
