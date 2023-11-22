@@ -1,26 +1,30 @@
 {
-    "editor.tabSize": 4,
-    "editor.detectIndentation": true,
-    "editor.wordWrap": "on",
-    "editor.formatOnSave": true,
-    "editor.defaultFormatter": "esbenp.prettier-vscode",
-    "editor.codeActionsOnSave": {
-        "source.fixAll": true
-    },
-    "html.format.enable": true,
-    "html.format.indentInnerHtml": true,
-    "html.format.indentHandlebars": true,
-    "html.format.extraLiners": "head, body, /html",
-    "html.format.unformatted": "code, pre, tt",
-    "html.format.wrapAttributes": "force-aligned",
-    "emmet.includeLanguages": {
-        "html": "html",
-        "javascript": "javascriptreact"
-    },
-    "emmet.triggerExpansionOnTab": true,
-    "files.exclude": {
-        "**/.git": true,
-        "**/.DS_Store": true,
-        "**/*.js.map": true
-    }
+	"editor.tabSize": 4,
+	"editor.detectIndentation": true,
+	"editor.wordWrap": "on",
+	"editor.formatOnSave": true,
+	"editor.defaultFormatter": "esbenp.prettier-vscode",
+	"editor.codeActionsOnSave": {
+		"source.fixAll": true
+	},
+	"html.format.enable": true,
+	"html.format.indentInnerHtml": true,
+	"html.format.indentHandlebars": true,
+	"html.format.extraLiners": "head, body, /html",
+	"html.format.unformatted": "code, pre, tt",
+	"html.format.wrapAttributes": "force-aligned",
+	"emmet.includeLanguages": {
+		"html": "html",
+		"javascript": "javascriptreact"
+	},
+	"emmet.triggerExpansionOnTab": true,
+	"files.exclude": {
+		"**/.git": true,
+		"**/.DS_Store": true,
+		"**/*.js.map": true
+	},
+	"[javascript]": {
+		"editor.tabSize": 4,
+		"editor.insertSpaces": true
+	}
 }
