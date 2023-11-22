@@ -18,7 +18,7 @@ async function displayHNComments(
 
 		commentsDrawer.innerHTML += `
     <div id="hn-comments-drawer-heading" class="hn-comments-drawer-heading">
-      Discussion on :
+      Comments On this post :
       <a href="https://news.ycombinator.com/item?id=${storyId}">
         ${storyData.title}
       </a>

@@ -2,6 +2,13 @@
 
 Integrate Hacker News comments and display them beautifully within your websites.
 
+## Demo
+
+[Live Demo 1](https://prakgupta.com/misc/hn-comments-drawer-demo)
+[Live Demo 2](https://prakgupta.com/blog/moving_away_from_substack)
+
+![Screenshot of the product](https://github.com/prakhar897/hn-comments-drawer/screenshot.png)
+
 ## Features
 
 -   Display HN comments using a single line of code.
@@ -10,15 +17,17 @@ Integrate Hacker News comments and display them beautifully within your websites
 
 ## Usage
 
-1. Include this snippet in your HTML document:
-   `<script src="https://cdn.jsdelivr.net/gh/prakhar897/hn-comments-drawer@main/src/script.js"></script>`
+1.  Include this snippet in your HTML document:
 
-2. Create an HTML element where you want to display the comments. Use the following format for the ID:
- <div
- id="hn-comments-drawer storyId-38300167 max-depth-3"
- class="hn-comments-drawer"> 
- </div>
- Replace `38300167` with the actual ID of the Hacker News story for which you want to display comments.
+    `<script src="https://cdn.jsdelivr.net/gh/prakhar897/hn-comments-drawer@main/src/script.js"></script>`
+
+2.  Create an HTML element where you want to display the comments. Use the following format for the ID:
+    <div
+    	id="hn-comments-drawer storyId-38300167 maxDepth-3 styling-default"
+    	class="hn-comments-drawer">
+    </div>
+
+        Replace `38300167` with the actual ID of the Hacker News story for which you want to display comments.
 
 ## JavaScript Integration
 
@@ -68,37 +77,45 @@ Customize the styling of the comments by modifying the provided CSS classes in y
       color:blue;
     }
 
+    .comments-loading {
+    	text-align: center;
+    	padding: 2rem;
+    }
+
 ## Examples
 
-    <!DOCTYPE html>
-    <html lang="en">
-    	<head>
-    		<meta charset="UTF-8" />
-    		<title>Hacker News Comments</title>
-    		<style>
-    			.hn-comments-drawer {
-    				border: 10px solid blue;
-    			}
-    		</style>
-    	</head>
-    	<body>
-    		<h1>Hacker News Comments</h1>
+    	<!DOCTYPE html>
+    	<html lang="en">
+    		<head>
+    			<meta charset="UTF-8" />
+    			<title>Hacker News Comments</title>
+    			<style>
+    				.hn-comments-drawer {
+    					border: 10px solid blue;
+    				}
+    			</style>
+    		</head>
+    		<body>
+    			<h1>Hacker News Comments</h1>
 
-    		<!-- Create multiple comment drawers with different story IDs -->
-    		<h2>Story 1 Comments</h2>
-    		<div
-    			id="hn-comments-drawer storyId-38300167 max-depth-3"
-    			class="hn-comments-drawer"
-    		></div>
+    			<!-- Create multiple comment drawers with different story IDs -->
+    			<h2>Story 1 Comments</h2>
+    			<div
+    				id="hn-comments-drawer storyId-38300167 maxDepth-10 styling-default"
+    				class="hn-comments-drawer"
+    			></div>
 
-    		<!-- <h2>Story 2 Comments</h2>
-    	<div id="hn-comments-drawer-38348010"></div> -->
+    			<h2>Story 2 Comments</h2>
+    			<div
+    				id="hn-comments-drawer storyId-38378455 maxDepth-10"
+    				class="hn-comments-drawer"
+    			></div>
 
-    		<!-- Automatically load comments -->
-    		<!-- <script src="../src/script.js"></script> -->
-    		<script src="https://cdn.jsdelivr.net/gh/prakhar897/hn-comments-drawer/src/script.js"></script>
-    	</body>
-    </html>
+    			<!-- Automatically load comments -->
+    			<!-- <script src="../src/script.js"></script> -->
+    			<script src="https://cdn.jsdelivr.net/gh/prakhar897/hn-comments-drawer@main/src/script.js"></script>
+    		</body>
+    	</html>
 
 You can find more examples in `examples` folder.
 
