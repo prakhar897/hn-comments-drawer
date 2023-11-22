@@ -5,9 +5,10 @@ Integrate Hacker News comments and display them beautifully within your websites
 ## Demo
 
 [Live Demo 1](https://prakgupta.com/misc/hn-comments-drawer-demo)
+
 [Live Demo 2](https://prakgupta.com/blog/moving_away_from_substack)
 
-![Screenshot of the product](https://github.com/prakhar897/hn-comments-drawer/screenshot.png)
+![Screenshot of the product](https://raw.githubusercontent.com/prakhar897/hn-comments-drawer/main/screenshot.png)
 
 ## Features
 
@@ -22,12 +23,30 @@ Integrate Hacker News comments and display them beautifully within your websites
     `<script src="https://cdn.jsdelivr.net/gh/prakhar897/hn-comments-drawer@main/src/script.js"></script>`
 
 2.  Create an HTML element where you want to display the comments. Use the following format for the ID:
-    <div
-    	id="hn-comments-drawer storyId-38300167 maxDepth-3 styling-default"
-    	class="hn-comments-drawer">
-    </div>
 
-        Replace `38300167` with the actual ID of the Hacker News story for which you want to display comments.
+        <div
+        	id="hn-comments-drawer storyId-38300167 maxDepth-3"
+        	class="hn-comments-drawer">
+        </div>
+
+    Replace `38300167` with the actual ID of the Hacker News story for which you want to display comments.
+
+## Docs
+
+-   Add maxDepth of comments:
+
+        <div
+        	id="hn-comments-drawer
+        	storyId-38300167 maxDepth-3"
+        	class="hn-comments-drawer">
+        </div>
+
+-   Add default styling:
+
+        <div
+        	id="hn-comments-drawer storyId-38300167 maxDepth-3 styling-default"
+        	class="hn-comments-drawer">
+        </div>
 
 ## JavaScript Integration
 
