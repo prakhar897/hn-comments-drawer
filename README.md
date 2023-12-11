@@ -26,7 +26,7 @@ Performance optimised version of the [Hacker News Drawer by prakhar897](https://
 2.  Create an HTML element where you want to display the comments. Use the following format for the ID:
 
         <div
-        	class="hn-comments-drawer"
+            class="hn-comments-drawer"
             hn-story-id="38300167">
         </div>
 
