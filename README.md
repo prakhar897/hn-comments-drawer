@@ -1,12 +1,13 @@
 # Hacker News Comments Drawer (hn-comments-drawer)
 
-Integrate Hacker News comments and display them beautifully within your websites.
+Performance optimised version of the [Hacker News Drawer by prakhar897](https://github.com/prakhar897/hn-comments-drawer/)
 
 ## Demo
 
-[Live Demo 1](https://prakgupta.com/misc/hn-comments-drawer-demo)
+[New Performance](https://hn-comments-drawer.vercel.app/examples)
 
-[Live Demo 2](https://prakgupta.com/blog/moving_away_from_substack)
+[Old Performance](https://prakgupta.com/misc/hn-comments-drawer-demo)
+
 
 ![Screenshot of the product](https://raw.githubusercontent.com/prakhar897/hn-comments-drawer/main/screenshot.png)
 
