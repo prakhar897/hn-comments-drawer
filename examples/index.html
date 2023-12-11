@@ -3,11 +3,7 @@
 	<head>
 		<meta charset="UTF-8" />
 		<title>Hacker News Comments</title>
-		<style>
-			.hn-comments-drawer {
-				border: 10px solid blue;
-			}
-		</style>
+		<link rel="stylesheet" href="../src/default.css"  />
 	</head>
 	<body>
 		<h1>Hacker News Comments</h1>
@@ -15,18 +11,19 @@
 		<!-- Create multiple comment drawers with different story IDs -->
 		<h2>Story 1 Comments</h2>
 		<div
-			id="hn-comments-drawer storyId-38300167 maxDepth-10 styling-default"
 			class="hn-comments-drawer"
+			hn-story-id="38300167"
+			hn-max-depth="10"
 		></div>
 
 		<h2>Story 2 Comments</h2>
 		<div
-			id="hn-comments-drawer storyId-38378455 maxDepth-10"
 			class="hn-comments-drawer"
+			hn-story-id="38300167"
+			hn-max-depth="10"
 		></div>
 
 		<!-- Automatically load comments -->
-		<!-- <script src="../src/script.js"></script> -->
-		<script src="https://cdn.jsdelivr.net/gh/prakhar897/hn-comments-drawer@main/src/script.js"></script>
+		<script src="../src/script.js"></script>
 	</body>
 </html>

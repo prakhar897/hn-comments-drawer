@@ -1,0 +1,47 @@
+.hn-comments-drawer {
+    list-style-type: none;
+    margin-left: 0;
+    padding-left: 20px;
+    border: 2px solid red;
+    margin-top: 50px;
+    margin-bottom: 50px;
+
+}
+
+.hn-comments-drawer-heading{
+    color: red;
+}
+
+.comments-list {
+    list-style-type: none; /* Remove default list-style dots */
+    padding-left: 0; /* Remove default padding */
+}
+
+.comments-list li {
+    border-left: 2px solid #ccc; /* Adjust thickness and color as needed */
+    padding-left: 10px; /* Adjust left padding for spacing */
+    margin-left: 5px; /* Adjust margin for spacing */
+    margin-top: 20px;
+}
+
+.comment-text {
+    color: red;
+}
+
+.comment-header {
+    color:blue;
+}
+
+.comment-text p {
+    color:blue;
+}
+
+.hn-comments-drawer-footer{
+    color: gray;
+}
+
+.comments-loading {
+    text-align: center;
+    padding: 2rem;
+    }
+    
