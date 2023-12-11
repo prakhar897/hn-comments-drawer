@@ -21,7 +21,7 @@ Performance optimised version of the [Hacker News Drawer by prakhar897](https://
 
 1.  Include this snippet in your HTML document:
 
-    `<script src="https://cdn.jsdelivr.net/gh/prakhar897/hn-comments-drawer@main/src/script.js"></script>`
+    `<script src="https://hn-comments-drawer.vercel.app/src/script.js"></script>`
 
 2.  Create an HTML element where you want to display the comments. Use the following format for the ID:
 
