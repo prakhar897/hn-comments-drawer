@@ -1,13 +1,14 @@
 # Hacker News Comments Drawer (hn-comments-drawer)
 
-Performance optimised version of the [Hacker News Drawer by prakhar897](https://github.com/prakhar897/hn-comments-drawer/)
+Integrate Hacker News comments and display them beautifully within your websites.
+
+[See Discussion on this](https://news.ycombinator.com/item?id=38597301)
 
 ## Demo
 
-[New Performance](https://hn-comments-drawer.vercel.app/examples)
+[Live Demo 1](https://prakgupta.com/misc/hn-comments-drawer-demo)
 
-[Old Performance](https://prakgupta.com/misc/hn-comments-drawer-demo)
-
+[Live Demo 2](https://prakgupta.com/blog/moving_away_from_substack)
 
 ![Screenshot of the product](https://raw.githubusercontent.com/prakhar897/hn-comments-drawer/main/screenshot.png)
 
@@ -21,7 +22,7 @@ Performance optimised version of the [Hacker News Drawer by prakhar897](https://
 
 1.  Include this snippet in your HTML document:
 
-    `<script src="https://hn-comments-drawer.vercel.app/src/script.js"></script>`
+    `<script src="https://cdn.jsdelivr.net/gh/prakhar897/hn-comments-drawer@latest/src/script.js"></script>`
 
 2.  Create an HTML element where you want to display the comments. Use the following format for the ID:
 
@@ -44,8 +45,7 @@ Performance optimised version of the [Hacker News Drawer by prakhar897](https://
 
 -   Add default styling:
 
-       		<link rel="stylesheet" href="https://hn-comments-drawer.vercel.app/src/default.css"  />
-
+       		<link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/prakhar897/hn-comments-drawer@latest/src/default.css"  />
 
 ## Styling
 
