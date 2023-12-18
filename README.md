@@ -1,12 +1,13 @@
 # Hacker News Comments Drawer (hn-comments-drawer)
 
-Integrate Hacker News comments and display them beautifully within your websites.
+Performance optimised version of the [Hacker News Drawer by prakhar897](https://github.com/prakhar897/hn-comments-drawer/)
 
 ## Demo
 
-[Live Demo 1](https://prakgupta.com/misc/hn-comments-drawer-demo)
+[New Performance](https://hn-comments-drawer.vercel.app/examples)
 
-[Live Demo 2](https://prakgupta.com/blog/moving_away_from_substack)
+[Old Performance](https://prakgupta.com/misc/hn-comments-drawer-demo)
+
 
 ![Screenshot of the product](https://raw.githubusercontent.com/prakhar897/hn-comments-drawer/main/screenshot.png)
 
@@ -20,13 +21,13 @@ Integrate Hacker News comments and display them beautifully within your websites
 
 1.  Include this snippet in your HTML document:
 
-    `<script src="https://cdn.jsdelivr.net/gh/prakhar897/hn-comments-drawer@main/src/script.js"></script>`
+    `<script src="https://hn-comments-drawer.vercel.app/src/script.js"></script>`
 
 2.  Create an HTML element where you want to display the comments. Use the following format for the ID:
 
         <div
-        	id="hn-comments-drawer storyId-38300167 maxDepth-3"
-        	class="hn-comments-drawer">
+            class="hn-comments-drawer"
+            hn-story-id="38300167">
         </div>
 
     Replace `38300167` with the actual ID of the Hacker News story for which you want to display comments.
@@ -36,25 +37,15 @@ Integrate Hacker News comments and display them beautifully within your websites
 -   Add maxDepth of comments:
 
         <div
-        	id="hn-comments-drawer
-        	storyId-38300167 maxDepth-3"
-        	class="hn-comments-drawer">
+            class="hn-comments-drawer"
+            hn-story-id="38300167"
+            hn-max-depth="30">
         </div>
 
 -   Add default styling:
 
-        <div
-        	id="hn-comments-drawer storyId-38300167 maxDepth-3 styling-default"
-        	class="hn-comments-drawer">
-        </div>
+       		<link rel="stylesheet" href="https://hn-comments-drawer.vercel.app/src/default.css"  />
 
-## JavaScript Integration
-
-    // Fetch and display Hacker News comments for a specific story ID
-
-    displayHNComments(storyId);
-
-Replace `storyId` with the actual ID of the Hacker News story for which you want to fetch comments.
 
 ## Styling
 
@@ -103,40 +94,7 @@ Customize the styling of the comments by modifying the provided CSS classes in y
 
 ## Examples
 
-    	<!DOCTYPE html>
-    	<html lang="en">
-    		<head>
-    			<meta charset="UTF-8" />
-    			<title>Hacker News Comments</title>
-    			<style>
-    				.hn-comments-drawer {
-    					border: 10px solid blue;
-    				}
-    			</style>
-    		</head>
-    		<body>
-    			<h1>Hacker News Comments</h1>
-
-    			<!-- Create multiple comment drawers with different story IDs -->
-    			<h2>Story 1 Comments</h2>
-    			<div
-    				id="hn-comments-drawer storyId-38300167 maxDepth-10 styling-default"
-    				class="hn-comments-drawer"
-    			></div>
-
-    			<h2>Story 2 Comments</h2>
-    			<div
-    				id="hn-comments-drawer storyId-38378455 maxDepth-10"
-    				class="hn-comments-drawer"
-    			></div>
-
-    			<!-- Automatically load comments -->
-    			<!-- <script src="../src/script.js"></script> -->
-    			<script src="https://cdn.jsdelivr.net/gh/prakhar897/hn-comments-drawer@main/src/script.js"></script>
-    		</body>
-    	</html>
-
-You can find more examples in `examples` folder.
+You can find examples in the `examples` folder.
 
 ## Contributing
 
