@@ -6,9 +6,9 @@ Integrate Hacker News comments and display them beautifully within your websites
 
 ## Demo
 
-[Live Demo 1](https://prakgupta.com/misc/hn-comments-drawer-demo)
+[Live Demo 1](https://softwaredesign.ing/misc/hn-comments-drawer-demo)
 
-[Live Demo 2](https://prakgupta.com/blog/moving-away-from-substack)
+[Live Demo 2](https://softwaredesign.ing/blog/moving-away-from-substack)
 
 ![Screenshot of the product](https://raw.githubusercontent.com/prakhar897/hn-comments-drawer/main/screenshot.png)
 
